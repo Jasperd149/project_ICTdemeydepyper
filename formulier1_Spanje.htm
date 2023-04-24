@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Formulieren post</title>
+	</head>
+	
+	<body>
+		
+		<form action="toon_waarden_post.php" method="post" >
+
+        	<p>Voornaam : <input type="text" name="voornaam" /></p>
+        	<!-- je vindt na submit de voornaam terug in $_POST['voornaam'] -->
+        	
+			<p>Achternaam : <input type="text" name="achternaam" /></p>
+			<p>Adres : <input type="text" name="adres"/></p>
+			<p>Aantal kinderen : <input type="text" name="    kinderen" value="kinderen" /></p>
+			
+			
+			<p>Heeft u een fiets ter beschikking : <p>
+			<p><input type="radio" name="fiets" value="ja" /> JA</p>
+			<p><input type="radio" name="fiets" value="nee" />NEE</p>
+			
+			
+			
+			<P>Beschikbare periode : <p>
+			<input type="checkbox" name="09-07 tot 18-07" value="PHP" />09-07 tot 18-07</p>
+			<input type="checkbox" name="19-07 tot 28-07" value="PHP" />19-07 tot 28-07</p>
+			<input type="checkbox" name="29-07 tot 07-08" value="PHP" />29-07 tot 07-08</p>
+			<input type="checkbox" name="08-07 tot 17-08" value="PHP" />08-07 tot 17-08</p>
+			
+			
+			<p>getrainde fietser?
+			<select name="cursus1">
+				<option value= "uitstekende conditie">uitstekende conditie</option>
+				<option value= "goede conditie">goede conditie</option>
+				<option value= "geen conditie">geen conditie</option>
+			</select>
+			</p>
+			
+			<P>Wat verwacht u van de fietsvakantie? : <p>
+			<textarea name="commentaar" rows="5" cols="40" ></textarea>
+			
+			
+			<p>Einde : <input type="submit" name="verzend" value="Verzend formulier" /></p>
+        
+        </form>
+		
+	</body>	
+	
+</html>
